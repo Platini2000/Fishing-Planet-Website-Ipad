@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platini2000 - Rocky Lake Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FISHING PLANET</h1>
+        <h2>Rocky Lake (Colorado) Guide</h2>
+    </header>
+
+    <nav>
+        <a href="../index.html">Lone Star Lake</a>        
+        <a href="../Emerald Lake/index.html">Emerald Lake</a>  
+        <a href="../Mudwater River/index.html">Mudwater River</a>
+        <a href="index.html" class="active">Rocky Lake</a>
+        <a href="../Neherrin River/index.html">Neherrin River</a>
+        <a href="../Gent Terneuzen/index.html">Gent Terneuzen</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- --- HOOFDMENU ROCKY LAKE (8 VISSEN) --- -->
+        <div id="fish-menu">
+            <h3 style="text-align: center; padding-left: 0px;">
+                <i class="fa-solid fa-fish" style="color: #4ca1af; margin-right: 15px;"></i> Kies een vissoort:
+            </h3>
+            
+            <div class="menu-list">
+                <!-- 1. Rainbow Trout -->
+                <button onclick="openFish('rainbow')">
+                    <img src="rainbow_trout.jpg" alt="Rainbow Trout">
+                    <span>Rainbow Trout</span>
+                </button>
+
+                <!-- 2. Cutthroat Trout -->
+                <button onclick="openFish('cutthroat')">
+                    <img src="cutthroat_trout.jpg" alt="Cutthroat Trout">
+                    <span>Cutthroat Trout</span>
+                </button>
+
+                <!-- 3. Golden Trout -->
+                <button onclick="openFish('golden')">
+                    <img src="golden_trout.jpg" alt="Colorado Golden">
+                    <span>Colorado Golden</span>
+                </button>
+
+                <!-- 4. White Sucker -->
+                <button onclick="openFish('sucker')">
+                    <img src="white_sucker.jpg" alt="White Sucker">
+                    <span>White Sucker</span>
+                </button>
+
+                <!-- 5. White Bass -->
+                <button onclick="openFish('whitebass')">
+                    <img src="white_bass.jpg" alt="White Bass">
+                    <span>White Bass</span>
+                </button>
+
+                <!-- 6. Black Crappie -->
+                <button onclick="openFish('crappie')">
+                    <img src="black_crappie.jpg" alt="Black Crappie">
+                    <span>Black Crappie</span>
+                </button>
+
+                <!-- 7. Bluegill -->
+                <button onclick="openFish('bluegill')">
+                    <img src="bluegill.jpg" alt="Bluegill">
+                    <span>Bluegill</span>
+                </button>
+
+                <!-- 8. Golden Shiner -->
+                <button onclick="openFish('shiner')">
+                    <img src="golden_shiner.jpg" alt="Golden Shiner">
+                    <span>Golden Shiner</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- --- VIS INFO SCHERMEN --- -->
+        <div id="fish-details">
+            
+            <!-- 1. RAINBOW TROUT -->
+            <div id="rainbow" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="rainbow_trout.jpg" alt="Rainbow Trout" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Rainbow Trout</h3>
+                        <p class="fish-bio">
+                            De hoofdvis van Rocky Lake. Ze zijn sterk, springen vaak uit het water en leveren uitstekende XP en geld op voor lage levels.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Ga naar 'Ferntastic Fishing'. Gooi recht vooruit richting de grote rotsen aan de overkant.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">ValueSpin 190</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Callisto MG 2500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.15mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas (Beste):</strong> Spinners (4g) #1/0<br>
+                            <em>(Kleur: Regenboog of Zilver)</em><br><br>
+                            <strong>Lepels:</strong> Narrow Spoons (7g)<br>
+                            <strong>Levend Aas:</strong> Krekels, Natuurlijke eitjes
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Uitstekend)<br>
+                            <strong>Types:</strong> Young, Common & Trophy<br>
+                            <strong>Lengte:</strong> 30cm - 60cm<br>
+                            <strong>Gewicht:</strong> 0.8kg - 3.5kg<br>
+                            <strong>Haakmaat:</strong> #1 tot #2/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Vis in het midden van het meer of vlak voor de rotswand.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Ferntastic Fishing</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-45.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Midden / Topwater</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Spinners: <span class="action-tag">Slow Straight</span> (Speed 1-2).
+                </div>
+            </div>
+
+            <!-- 2. CUTTHROAT TROUT -->
+            <div id="cutthroat" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="cutthroat_trout.jpg" alt="Cutthroat Trout" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Cutthroat Trout</h3>
+                        <p class="fish-bio">
+                            Herkenbaar aan de rode snede onder de kaak. Vecht iets agressiever dan de regenboogforel en zit vaak iets dieper.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zelfde plek als de Regenboogforel, maar probeer iets meer naar rechts te werpen, richting de bomen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Elemental 240</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Callisto MG 2500</span></div>
+                                <div class="gear-row"><span class="gear-label">Leader:</span> <span class="gear-val">Fluoro 0.20mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Nano Spoons (6g)<br>
+                            <em>(Kleur: Goud werkt hier goed)</em><br><br>
+                            <strong>Levend Aas:</strong> Sprinkhanen (Grasshoppers), Krekels.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Hoog)<br>
+                            <strong>Types:</strong> Common & Trophy<br>
+                            <strong>Lengte:</strong> 25cm - 50cm<br>
+                            <strong>Gewicht:</strong> 0.5kg - 2.0kg<br>
+                            <strong>Haakmaat:</strong> #2 tot #1/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Iets rechts van het midden.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Ferntastic Fishing</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-25.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-35.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Afstand:</span> <span class="gear-val">30m - 40m</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> <span class="action-tag">Stop&Go</span> met lepels. Dobber: 1.5m diep.
+                </div>
+            </div>
+
+            <!-- 3. GOLDEN TROUT -->
+            <div id="golden" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="golden_trout.jpg" alt="Golden Trout" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Colorado Golden Trout</h3>
+                        <p class="fish-bio">
+                            De zeldzaamste forel in dit meer. Prachtig goudkleurig. Als je er een vangt, is dat een mooie bonus voor je portemonnee.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Ze zwemmen vaak solitair. Probeer ver te werpen met licht materiaal voor de meeste XP (barbless).
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Aurora 230</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">InspirateCast 3000</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Fluoro (Onzichtbaar)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Barbless Nano Spoons<br>
+                            <em>(Gebruik weerhaakloos voor extra XP!)</em><br><br>
+                            <strong>Levend Aas:</strong> Mayflies (Eendagsvliegen), Vliegen.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐⭐ (Top)<br>
+                            <strong>Types:</strong> Common, Trophy & Unique<br>
+                            <strong>Lengte:</strong> 20cm - 45cm<br>
+                            <strong>Gewicht:</strong> 0.3kg - 1.5kg<br>
+                            <strong>Haakmaat:</strong> #4 tot #2<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Vaak dicht tegen de rotswand aan de overkant.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Tegen Rotsen</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-55.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-15.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Richting:</span> <span class="gear-val">Recht vooruit</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> <span class="action-tag">Twitch</span> met kleine plugjes of lepels.
+                </div>
+            </div>
+
+            <!-- 4. WHITE SUCKER -->
+            <div id="sucker" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="white_sucker.jpg" alt="White Sucker" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">White Sucker</h3>
+                        <p class="fish-bio">
+                            Een bodemvis die alles eet wat hij tegenkomt. Makkelijk te vangen als bijvangst tijdens het forellen.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Overal op de bodem, maar vooral in de diepere geulen. Gebruik een werphengel met lood.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">CreekPro 240</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CrucianHunter 3000</span></div>
+                                <div class="gear-row"><span class="gear-label">Lood:</span> <span class="gear-val">50g - 75g</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas (Bodem)</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Deegballen (Doughballs)<br>
+                            <strong>Alternatief:</strong> Erwten (Peas), Semolina<br>
+                            <strong>Tip:</strong> Bloedwormen werken ook goed.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Redelijk)<br>
+                            <strong>Types:</strong> Common & Trophy<br>
+                            <strong>Lengte:</strong> 30cm - 55cm<br>
+                            <strong>Gewicht:</strong> 0.8kg - 2.5kg<br>
+                            <strong>Haakmaat:</strong> #4 tot #1<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Gooi niet te ver, ongeveer 20 meter uit de kant.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Rechts v. Steiger</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">10.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-25.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem!</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Statisch bodemvissen. Gebruik een belletje en wacht.
+                </div>
+            </div>
+
+            <!-- 5. WHITE BASS -->
+            <div id="whitebass" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="white_bass.jpg" alt="White Bass" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">White Bass</h3>
+                        <p class="fish-bio">
+                            Een zilverkleurige rover die in scholen jaagt. Ze zijn agressief en vallen vaak hetzelfde aas aan als forel.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Vis bij 'Trout Galore' vlakbij de leliebladen, of bij de boomstam rechts van 'Ferntastic Fishing'.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">TeleFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">MiniSpin 1200</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.18mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Beste Aas:</strong> Small Minnows (Levend aas)<br>
+                            <strong>Alternatief:</strong> Maden, Wormen<br>
+                            <strong>Kunstaas:</strong> Smalle Lepels, Spinners.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Gemiddeld)<br>
+                            <strong>Types:</strong> Common & Trophy<br>
+                            <strong>Lengte:</strong> 25cm - 40cm<br>
+                            <strong>Gewicht:</strong> 0.4kg - 1.2kg<br>
+                            <strong>Haakmaat:</strong> #4 tot #2<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Werp richting de structuur (boomstam/lelies).
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Trout Galore</span></div>
+                                <div class="gear-row"><span class="gear-label">Target:</span> <span class="gear-val">Leliebladen</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">1m - 1.5m</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Dobbervissen met minnows is het meest effectief.
+                </div>
+            </div>
+
+            <!-- 6. BLACK CRAPPIE -->
+            <div id="crappie" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="black_crappie.jpg" alt="Black Crappie" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Black Crappie</h3>
+                        <p class="fish-bio">
+                            Een populaire sportvis met donkere vlekken. Ze houden van beschutting en zijn vooral actief bij bewolkt weer of schemering.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zoek de leliebladen op bij 'Trout Galore'. Gooi er zo dicht mogelijk tegenaan.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">TeleFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Dobber:</span> <span class="gear-val">Slank (Chubby)</span></div>
+                                <div class="gear-row"><span class="gear-label">Haak:</span> <span class="gear-val">#4</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Maggots, Wax Worms<br>
+                            <strong>Trophy Aas:</strong> Small Minnows<br>
+                            <strong>Kunstaas:</strong> Tube Jigs (Wit/Roze)
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Types:</strong> Common & Trophy<br>
+                            <strong>Lengte:</strong> 18cm - 35cm<br>
+                            <strong>Gewicht:</strong> 0.2kg - 1.0kg<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Links van de startplek Trout Galore.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Trout Galore</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">15.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-7.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">50cm - 120cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Dobbervissen. Zet je diepte op 50cm voor de meeste actie.
+                </div>
+            </div>
+
+            <!-- 7. BLUEGILL -->
+            <div id="bluegill" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="bluegill.jpg" alt="Bluegill" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Bluegill</h3>
+                        <p class="fish-bio">
+                            Kleine, felgekleurde zonnebaars. Ze zijn de perfecte 'panfish' en bijten op vrijwel alles wat in het water valt.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Ondiep water, vlak langs de kant of bij plantenbedden. Ze zitten vaak gemengd met de Crappies.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Lichte Tele hengel</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Kleinste model</span></div>
+                                <div class="gear-row"><span class="gear-label">Haak:</span> <span class="gear-val">#10 tot #6</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Deegballen, Brood, Krekels<br>
+                            <strong>Alternatief:</strong> Maden (Maggots)<br>
+                            <strong>Tip:</strong> Gebruik kleine haken!
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Laag)<br>
+                            <strong>Types:</strong> Common & Trophy<br>
+                            <strong>Lengte:</strong> 15cm - 25cm<br>
+                            <strong>Gewicht:</strong> 0.2kg - 0.5kg<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Rondom de leliebladen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Trout Galore</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">30cm - 60cm</span></div>
+                                <div class="gear-row"><span class="gear-label">Afstand:</span> <span class="gear-val">8m - 12m</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Dobbervissen ondiep. Direct aanslaan bij beweging.
+                </div>
+            </div>
+
+            <!-- 8. GOLDEN SHINER -->
+            <div id="shiner" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="golden_shiner.jpg" alt="Golden Shiner" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Golden Shiner</h3>
+                        <p class="fish-bio">
+                            Een goudkleurig aasvisje. Lastig te vangen door zijn kleine bekje, maar essentieel voor sommige missies.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">               
+                        <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            In de buurt van begroeiing (wier/lelies). Gebruik de allerlichtste hengel en dobber die je hebt.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">TeleFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">MiniSpin 800</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.12mm</span></div>
+                                <div class="gear-row"><span class="gear-label">Haak:</span> <span class="gear-val">#10 tot #8</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Nummer 1 Aas:</strong> Brood (Bread)<br>
+                            <strong>Alternatief:</strong> Deegballen (Doughballs)<br>
+                            <em>(Ze houden van plantaardig aas)</em>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Nihil)<br>
+                            <strong>Types:</strong> Common<br>
+                            <strong>Lengte:</strong> 8cm - 15cm<br>
+                            <strong>Gewicht:</strong> < 0.2kg<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Vlakbij de steiger bij Trout Galore of Ferntastic Fishing (bij de boomstam).
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Overal langs kant</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">30cm - 50cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Geduld en precisie. Gebruik Brood voor het beste resultaat.
+                </div>
+            </div>
+
+        </div> <!-- Einde Fish Details -->
+    </div>
+
+    <footer>
+        &copy; 2026 Platini2000 Fishing Guides
+    </footer>
+
+    <!-- Script staat in de root map -->
+    <script src="../script.js"></script>
+</body>
+</html>

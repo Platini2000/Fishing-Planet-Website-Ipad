@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platini2000 - Ghent–Terneuzen Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FISHING PLANET</h1>
+        <h2>Ghent Terneuzen (Nederland) Guide</h2>
+    </header>
+
+    <nav>
+        <a href="../index.html">Lone Star Lake</a>
+        <a href="../Emerald Lake/index.html">Emerald Lake</a>
+        <a href="../Mudwater River/index.html">Mudwater River</a>  
+        <a href="../Rocky Lake/index.html">Rocky Lake</a>
+        <a href="../Neherrin River/index.html">Neherrin River</a>
+        <a href="index.html" class="active">Gent Terneuzen</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- --- HOOFDMENU GHENT TERNEUZEN --- -->
+        <div id="fish-menu">
+            <h3 style="text-align: center; padding-left: 0px;">
+                <i class="fa-solid fa-fish" style="color: #4ca1af; margin-right: 15px;"></i> Kies een vissoort:
+            </h3>
+            
+            <div class="menu-list">
+                <!-- VREEDZAME VISSEN -->
+                <button onclick="openFish('roach')">
+                    <img src="common_roach.jpg" alt="Common Roach">
+                    <span>Common Roach</span>
+                </button>
+                <button onclick="openFish('bream')">
+                    <img src="common_bream.jpg" alt="Common Bream">
+                    <span>Common Bream</span>
+                </button>
+                <button onclick="openFish('silverbream')">
+                    <img src="silver_bream.jpg" alt="Silver Bream">
+                    <span>Silver Bream</span>
+                </button>
+                <button onclick="openFish('prussian')">
+                    <img src="prussian_carp.jpg" alt="Prussian Carp">
+                    <span>Prussian Carp</span>
+                </button>
+                <button onclick="openFish('ide')">
+                    <img src="ide.jpg" alt="Ide">
+                    <span>Ide</span>
+                </button>
+                <button onclick="openFish('tench')">
+                    <img src="tench.jpg" alt="Tench">
+                    <span>Tench</span>
+                </button>
+                <button onclick="openFish('commoncarp')">
+                    <img src="common_carp.jpg" alt="Common Carp">
+                    <span>Common Carp</span>
+                </button>
+                <button onclick="openFish('mirrorcarp')">
+                    <img src="mirror_carp.jpg" alt="Mirror Carp">
+                    <span>Mirror Carp</span>
+                </button>
+
+                <!-- ROOFVISSEN -->
+                <button onclick="openFish('asp')">
+                    <img src="asp.jpg" alt="Asp">
+                    <span>Asp</span>
+                </button>
+                <button onclick="openFish('perch')">
+                    <img src="european_perch.jpg" alt="European Perch">
+                    <span>European Perch</span>
+                </button>
+                <button onclick="openFish('zander')">
+                    <img src="zander.jpg" alt="Zander">
+                    <span>Zander</span>
+                </button>
+                <button onclick="openFish('pike')">
+                    <img src="northern_pike.jpg" alt="Northern Pike">
+                    <span>Northern Pike</span>
+                </button>
+                <button onclick="openFish('wels')">
+                    <img src="wels_catfish.jpg" alt="Wels Catfish">
+                    <span>Wels Catfish</span>
+                </button>
+                <button onclick="openFish('eel')">
+                    <img src="european_eel.jpg" alt="European Eel">
+                    <span>European Eel</span>
+                </button>
+
+                <!-- BRAK/ZOUT WATER SPECIAAL -->
+                <button onclick="openFish('flounder')">
+                    <img src="european_flounder.jpg" alt="European Flounder">
+                    <span>European Flounder</span>
+                </button>
+                <button onclick="openFish('mullet')">
+                    <img src="thick_lipped_grey_mullet.jpg" alt="Grey Mullet">
+                    <span>Grey Mullet</span>
+                </button>
+                <button onclick="openFish('goby')">
+                    <img src="round_goby.jpg" alt="Round Goby">
+                    <span>Round Goby</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- --- VIS INFO SCHERMEN --- -->
+        <div id="fish-details">
+            
+            <!-- 1. COMMON ROACH -->
+            <div id="roach" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="common_roach.jpg" alt="Roach" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Common Roach (Blankvoorn)</h3>
+                        <p class="fish-bio">
+                            Een zeer algemene witvis. Zwemt in scholen en is makkelijk te vangen met licht materiaal.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Vis vlakbij de kades of in het open water met een dobber.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">TeleFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">MiniSpin 800</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.12mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Deegballen, Brood, Maden, Pinkies.<br>
+                            <strong>Haak:</strong> #14 tot #10<br>
+                            <strong>Voer:</strong> Active Feeder.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Laag)<br>
+                            <strong>Gewicht:</strong> 0.1kg - 1.0kg<br>
+                            <strong>Grootte:</strong> 15cm - 35cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Langs de kade bij de start.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-58.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">12.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">100cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. COMMON BREAM -->
+            <div id="bream" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="common_bream.jpg" alt="Bream" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Common Bream (Brasem)</h3>
+                        <p class="fish-bio">
+                            De koning van de Nederlandse kanalen. Bodemvis die houdt van veel lokvoer.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            In de vaargeul. Gebruik een Feederhengel!
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">CreekPro 270 (Feeder)</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CrucianHunter 3500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.15mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Erwten (Peas), Semolina, Maden.<br>
+                            <strong>Haak:</strong> #6 tot #2<br>
+                            <strong>Lokvoer:</strong> Big Bream mix.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Goed in volume)<br>
+                            <strong>Gewicht:</strong> 1kg - 5kg<br>
+                            <strong>Grootte:</strong> 30cm - 70cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Werp ver richting het midden van het kanaal.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">30.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Afstand:</span> <span class="gear-val">40m - 50m</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. SILVER BREAM -->
+            <div id="silverbream" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="silver_bream.jpg" alt="Silver Bream" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Silver Bream (Kolblei)</h3>
+                        <p class="fish-bio">
+                            Het kleinere neefje van de Brasem. Heeft grotere ogen en zilveren schubben.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Vaak gemengd met Brasem, maar dichterbij de kant.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">CreekPro 240</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CrucianHunter 3000</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.14mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Brood, Maden, Bloedwormen.<br>
+                            <strong>Haak:</strong> #10 tot #8
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Laag)<br>
+                            <strong>Gewicht:</strong> 0.2kg - 1.0kg<br>
+                            <strong>Grootte:</strong> 20cm - 35cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Recht vooruit, halverwege het kanaal.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">Afstand:</span> <span class="gear-val">20m - 25m</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. PRUSSIAN CARP -->
+            <div id="prussian" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="prussian_carp.jpg" alt="Prussian Carp" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Prussian Carp (Giebel)</h3>
+                        <p class="fish-bio">
+                            Lijkt op een kruising tussen een goudvis en een karper. Sterke vechter voor zijn formaat.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Langs de rietkragen aan de overkant of zijkanten.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">TeleFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Callisto MG 2500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.18mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Deegballen, Griesmeel (Semolina), Brood.<br>
+                            <strong>Haak:</strong> #8 tot #4
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Redelijk)<br>
+                            <strong>Gewicht:</strong> 0.5kg - 2.0kg<br>
+                            <strong>Grootte:</strong> 25cm - 45cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Werp naar de rietkraag links.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-65.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">25.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">120cm - 150cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. IDE -->
+            <div id="ide" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="ide.jpg" alt="Ide" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Ide (Winde)</h3>
+                        <p class="fish-bio">
+                            Actieve vis die zowel op de bodem als aan de oppervlakte jaagt. Houdt van stromend water.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            In de buurt van de sluisdeuren waar stroming is.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">OmniFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CallistoXS 1400</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.20mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Mini Spinners, Krekels (Topwater).<br>
+                            <strong>Aas:</strong> Sprinkhanen, Brood, Maden.<br>
+                            <strong>Haak:</strong> #6 tot #4
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Gemiddeld)<br>
+                            <strong>Gewicht:</strong> 1kg - 3kg<br>
+                            <strong>Grootte:</strong> 30cm - 55cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Rechts bij de sluis (Ghent Lock).
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Ghent Lock</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">50.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">10.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">50cm (Topwater)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. ASP -->
+            <div id="asp" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="asp.jpg" alt="Asp" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Asp (Roofblei)</h3>
+                        <p class="fish-bio">
+                            De enige karperachtige die een echte rover is. Jaagt met hoge snelheid aan de oppervlakte.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Harde stroming bij de sluis of brugpijlers. Je moet ver werpen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Rivertex 270 (Spin)</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">IronPunch 4500 (Snel!)</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.23mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas (Top):</strong> Spinners, Smalle Lepels (Spoons), Walkers.<br>
+                            <strong>Levend Aas:</strong> Shiners.<br>
+                            <strong>Techniek:</strong> Snel binnendraaien aan oppervlakte.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Gewicht:</strong> 2kg - 5kg<br>
+                            <strong>Grootte:</strong> 40cm - 80cm<br>
+                            <strong>Haakmaat:</strong> #1/0 tot #3/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Midden in het kolkende water van de sluis.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Ghent Lock</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">60.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">15.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. EUROPEAN PERCH -->
+            <div id="perch" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="european_perch.jpg" alt="European Perch" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">European Perch (Baars)</h3>
+                        <p class="fish-bio">
+                            Prachtige rover met rode vinnen en zwarte strepen. Houdt van structuren zoals bruggen en kades.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Onder bruggen en langs kademuren (Drop-shotten of Jiggen).
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">JigWinner 270</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">EspiraML 3000</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.15mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Shads (7cm), Grubs, Spinners.<br>
+                            <strong>Techniek:</strong> Dropshot of Jigging (Stop&Go).<br>
+                            <strong>Haak:</strong> #2 tot #1/0
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Gemiddeld)<br>
+                            <strong>Gewicht:</strong> 0.5kg - 2.5kg (Grote baarzen hier!)<br>
+                            <strong>Grootte:</strong> 25cm - 50cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Gooi strak tegen de brugpijlers.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-45.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">10.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. ZANDER -->
+            <div id="zander" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="zander.jpg" alt="Zander" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Zander (Snoekbaars)</h3>
+                        <p class="fish-bio">
+                            De 'Glasoog'. De populairste sportvis hier. Jaagt vooral in de schemering en nacht op de bodem.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Harde bodem, diepe gaten en langs damwanden. Nachtvissen is top.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">JigWinner 270</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Bremer 4500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.19mm + Fluoro Leader</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Shads (Glow in the dark!)<br>
+                            <strong>Levend Aas:</strong> Common Minnow, Gudgeon.<br>
+                            <strong>Techniek:</strong> Lift&Drop of Stop&Go.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Uitstekend)<br>
+                            <strong>Gewicht:</strong> 1kg - 8kg<br>
+                            <strong>Grootte:</strong> 40cm - 90cm<br>
+                            <strong>Haakmaat:</strong> #2/0 tot #4/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Werp parallel aan de kademuren bij de industriezone.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Industriezone</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">25.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-15.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Tijd:</span> <span class="gear-val">20:00 - 05:00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. NORTHERN PIKE -->
+            <div id="pike" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="northern_pike.jpg" alt="Northern Pike" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Northern Pike (Snoek)</h3>
+                        <p class="fish-bio">
+                            De groene rover. Staat bekend om zijn agressieve aanbeten en scherpe tanden.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Langs de rietkragen en bij waterplanten. **LET OP: Titanium Leader verplicht!**
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">GalaxyCast 260</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Cyclone 4500</span></div>
+                                <div class="gear-row"><span class="gear-label">Leader:</span> <span class="gear-val">Titanium 0.25mm+</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Casting Spoons, Jerkbaits, Crankbaits.<br>
+                            <strong>Levend Aas:</strong> Voorn (Roach), Goudvis.<br>
+                            <strong>Haakmaat:</strong> #3/0 tot #6/0
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Gewicht:</strong> 2kg - 10kg+<br>
+                            <strong>Grootte:</strong> 50cm - 110cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            In de hoek bij het riet.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-65.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Target:</span> <span class="gear-val">Riet</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. EUROPEAN EEL -->
+            <div id="eel" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="european_eel.jpg" alt="European Eel" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">European Eel (Paling)</h3>
+                        <p class="fish-bio">
+                            Slangachtige bodemvis. Laat zich alleen 's nachts vangen en vecht door zich om obstakels te draaien.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Vlak langs de kant op de bodem, tussen de stenen. Alleen 's nachts.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">CreekPro 270 (Feeder)</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CrucianHunter 3500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.25mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Wormen, Stukjes vis (Cutbait), Kikkers.<br>
+                            <strong>Haak:</strong> #2 tot #1/0<br>
+                            <strong>Tijd:</strong> 21:00 - 04:00
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐⭐ (Top!)<br>
+                            <strong>Gewicht:</strong> 1kg - 4kg<br>
+                            <strong>Lengte:</strong> 50cm - 100cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Recht naar beneden, onder de hengeltop.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Stenen kade</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-58.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">12.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. COMMON CARP -->
+            <div id="commoncarp" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="common_carp.jpg" alt="Common Carp" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Common Carp (Schubkarper)</h3>
+                        <p class="fish-bio">
+                            De oersterke karper. Volledig beschubd en een enorme vechter.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zoek naar voerplekken of ondiepere platen. Karperhengel is een must.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Deep Horizon 400</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Leviathan 9000</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.28mm+</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Boilies, Mais (Corn), Pellets.<br>
+                            <strong>Haak:</strong> #2 tot #4/0<br>
+                            <strong>Voer:</strong> Carp Mix met Aromas.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Gewicht:</strong> 3kg - 15kg+<br>
+                            <strong>Type:</strong> Young, Common, Trophy<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Richting de overkant varen met voerboot of ver werpen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-15.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">35.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. MIRROR CARP -->
+            <div id="mirrorcarp" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="mirror_carp.jpg" alt="Mirror Carp" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Mirror Carp (Spiegelkarper)</h3>
+                        <p class="fish-bio">
+                            Karper met grote, onregelmatige schubben. Vaak zwaarder dan de schubkarper.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zelfde als de Schubkarper. Gebruik Lead Core leaders voor de bodem.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Deep Horizon 400</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Leviathan 9000</span></div>
+                                <div class="gear-row"><span class="gear-label">Leader:</span> <span class="gear-val">Lead Core</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Boilies (Tutti Frutti / Crab), Mais.<br>
+                            <strong>Haak:</strong> #2 tot #4/0
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Gewicht:</strong> 4kg - 20kg<br>
+                            <strong>Sterkte:</strong> Zeer sterk<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Voerplekken aanleggen werkt het best.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">35.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. TENCH -->
+            <div id="tench" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="tench.jpg" alt="Tench" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Tench (Zeelt)</h3>
+                        <p class="fish-bio">
+                            De 'doktervis' met zijn groene huid en rode ogen. Vecht explosief en duikt direct de planten in.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Tussen de leliebladen en riet.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Brutus 330 (Match)</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">EspiraDouble 4500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.23mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Mestpieren (Wormen), Maden, Brood.<br>
+                            <strong>Haak:</strong> #4 tot #2
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Gewicht:</strong> 1kg - 4kg<br>
+                            <strong>Grootte:</strong> 30cm - 60cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Dicht tegen de begroeiing aan.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-65.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">20.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. WELS CATFISH -->
+            <div id="wels" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="wels_catfish.jpg" alt="Wels Catfish" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Wels Catfish (Europese Meerval)</h3>
+                        <p class="fish-bio">
+                            De absolute top predator. Kan gigantisch worden en eet eenden, vissen en ratten.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Diepste gaten in de vaargeul. Zwaarste materiaal vereist.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Brutus 360 (Bottom)</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">ThunderSpin 5500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.35mm+</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Grote stukken vis (Cutbait), Kikkers, Eend.<br>
+                            <strong>Kunstaas:</strong> Grote Shads, Deep Crankbaits.<br>
+                            <strong>Haak:</strong> #6/0 tot #10/0
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Hoog)<br>
+                            <strong>Gewicht:</strong> 5kg - 50kg+<br>
+                            <strong>Tijd:</strong> Nacht en bewolkt<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Midden in de diepe geul.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Van der Vliet</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">30.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem (Diep)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. EUROPEAN FLOUNDER -->
+            <div id="flounder" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="european_flounder.jpg" alt="European Flounder" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">European Flounder (Bot)</h3>
+                        <p class="fish-bio">
+                            Een platvis die goed gedijt in het brakke water van dit kanaal. Ligt plat op de bodem.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zanderige bodems. Feeder hengel werkt hier prima.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">CreekPro 270</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CrucianHunter 3500</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.15mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Zeepieren (Sea Worms), Zagers, Stukjes vis (Cutbait), Garnalen.<br>
+                            <strong>Haak:</strong> #4 tot #1
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Redelijk)<br>
+                            <strong>Gewicht:</strong> 0.3kg - 1.5kg<br>
+                            <strong>Grootte:</strong> 20cm - 45cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Bodemvissen is verplicht.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Zandplaten</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-35.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16. THICK-LIPPED GREY MULLET -->
+            <div id="mullet" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="thick_lipped_grey_mullet.jpg" alt="Grey Mullet" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Grey Mullet (Diklipharder)</h3>
+                        <p class="fish-bio">
+                            Schuwe vis die vaak aan de oppervlakte 'hapt'. Zeer sterke vechter op licht materiaal.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            In de buurt van sluizen en kades. Gebruik een lange dobberhengel met onzichtbare lijn.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">OmniFloat 450 (Match)</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">CallistoXS 1400</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Fluoro 0.18mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Brood (Vlok), Zeepieren (Sea Worms), Zagers.<br>
+                            <strong>Haak:</strong> #8 tot #6 (Kleine haak!)
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Gewicht:</strong> 1kg - 4kg<br>
+                            <strong>Grootte:</strong> 40cm - 70cm<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Vaak op half water of ondiep.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Ghent Lock</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">55.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">10.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">50cm - 150cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17. ROUND GOBY -->
+            <div id="goby" class="fish-card hidden">
+                <div class="top-section">
+                    <img src="round_goby.jpg" alt="Round Goby" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Round Goby (Zwartbekgrondel)</h3>
+                        <p class="fish-bio">
+                            Invasieve soort. Klein, agressief en zit overal tussen de stenen.
+                        </p>
+                        <button class="back-btn" onclick="showMenu()">⬅ Terug naar Menu</button>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Tussen de stenen langs de kant.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">TeleFloat 450</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">MiniSpin 800</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Mono 0.12mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas</h4>
+                        <div class="detail-text">
+                            <strong>Aas:</strong> Maden, Pinkies, Bloedwormen.<br>
+                            <strong>Haak:</strong> #14 tot #10
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Nihil)<br>
+                            <strong>Gewicht:</strong> < 0.2kg<br>
+                            <strong>Status:</strong> Plaagvis<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Strak tegen de kademuur.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Kade</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-58.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">12.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Einde Fish Details -->
+    </div>
+
+    <footer>
+        &copy; 2026 Platini2000 Fishing Guides
+    </footer>
+
+    <!-- Script staat in de root map -->
+    <script src="../script.js"></script>
+</body>
+</html>
