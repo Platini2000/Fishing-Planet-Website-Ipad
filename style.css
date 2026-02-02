@@ -48,17 +48,20 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
 .top-nav {
     position: sticky;
     top: 0;
-    z-index: 1001; /* Zorg dat deze boven de rest blijft */
+    margin-top: 10px; /* AANPASSING: Iets naar beneden vanaf header */
+    z-index: 1001;
     border-bottom: 1px solid #333;
 }
 
-/* 2. BOTTOM NAV (Vissen) - Plakt direct onder de top nav */
+/* 2. BOTTOM NAV (Vissen) - Plakt onder de top nav */
 .bottom-nav {
     position: sticky;
-    top: 60px; /* Hoogte van top-nav, zodat ze aansluiten */
+    /* AANPASSING: Meer ruimte vanaf de bovenste balk */
+    top: 75px; /* 60px hoogte + 15px marge */
+    margin-top: 15px; /* De ruimte tussen de balken */
     z-index: 1000;
-    background-color: #161618; /* Iets lichter voor onderscheid */
-    border-bottom: 2px solid #4ca1af; /* Kleur accent */
+    background-color: #161618;
+    border-bottom: 2px solid #4ca1af;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
@@ -78,19 +81,20 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
     border: 1px solid transparent;
 }
 
-/* Hover effect */
+/* AANPASSING: Hover kleur verwijderd (blijft transparant) */
 .scroll-nav a:hover {
-    background-color: #2c3e50;
-    color: white;
-    border-color: #4ca1af;
+    background-color: transparent; 
+    color: #fff; /* Alleen tekst iets witter maken bij hover, geen achtergrond */
+    border-color: transparent;
 }
 
-/* Actieve knop */
+/* AANPASSING: Actieve knop met TRANSPARANTE achtergrond */
 .scroll-nav a.active {
-    background-color: #4ca1af; 
-    color: #1a1a1d; 
+    /* 76, 161, 175 is jouw blauwe kleur. 0.4 zorgt voor 40% zichtbaarheid */
+    background-color: rgba(76, 161, 175, 0.1); 
+    color: #ffffff; 
     font-weight: bold;
-    box-shadow: 0 0 15px rgba(76, 161, 175, 0.4); 
+    box-shadow: 0 0 15px rgba(76, 161, 175, 0.2); 
     border: 1px solid #7dd3e0;
 }
 
@@ -106,8 +110,7 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
 
 /* --- VIS DETAILS (KAARTEN) --- */
 .fish-card {
-    display: none; /* Standaard verborgen, JS zet ze aan */
-    /* Animatie als kaart verschijnt */
+    display: none;
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -136,6 +139,10 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
     border: 2px solid #4ca1af; 
     margin-bottom: 10px;     
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    object-position: center 55%; 
+    /* AANPASSING: Foto iets naar boven verschoven */
+    margin-top: -1px; 
+    background-color: #1a1a1d; /* Zorgt dat de achtergrond niet doorschijnt */
 }
 
 .header-info {
@@ -145,7 +152,7 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
 .fish-title {
     color: #4ca1af;
     font-size: 1.8em;         
-    margin: 5px 0;             
+    margin: 15px 0 5px 0; /* Iets meer ruimte boven de titel */
     line-height: 1.2;
 }
 
@@ -250,11 +257,13 @@ footer {
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         border: 1px solid #444;
+        margin-top: 25px; /* Ruimte voor de foto die uitsteekt */
     }
 
     .fish-img-uniform {
-        /* HIER IS DE AANPASSING VOOR GROTERE FOTO */
+        /* AANPASSING: Foto groter op mobiel en steekt uit */
         height: 160px !important; 
+        margin-top: -35px !important; /* Foto trekt iets meer naar boven op mobiel */
         margin-bottom: 5px !important;
     }
 
