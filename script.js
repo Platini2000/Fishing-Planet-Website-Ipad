@@ -71,6 +71,23 @@ const fishData = {
         { id: 'shad', name: 'American Shad' },
         { id: 'shiner', name: 'Golden Shiner' }
     ],
+    "Everglades": [
+        { id: 'peacock', name: 'Butterfly Peacock Bass' },
+        { id: 'largemouth', name: 'Largemouth Bass' },
+        { id: 'snook', name: 'Common Snook' },
+        { id: 'tarpon', name: 'Tarpon' },
+        { id: 'gar', name: 'Florida Gar' },
+        { id: 'reddrum', name: 'Red Drum' },
+        { id: 'gafftopsail', name: 'Gafftopsail Catfish' },
+        { id: 'oscar', name: 'Oscar' },
+        { id: 'bowfin', name: 'Bowfin' },
+        { id: 'bullhead', name: 'Brown Bullhead' },
+        { id: 'channelcat', name: 'Channel Catfish' },
+        { id: 'warmouth', name: 'Warmouth' },
+        { id: 'redear', name: 'Redear Sunfish' },
+        { id: 'bluegill', name: 'Bluegill' },
+        { id: 'shiner', name: 'Golden Shiner' }
+    ],
     "Gent": [
         { id: 'roach', name: 'Common Roach' },
         { id: 'bream', name: 'Common Bream' },
@@ -110,6 +127,8 @@ if (pageTitle.includes("Lone Star")) {
     currentFishList = fishData["Falcon"];
 } else if (pageTitle.includes("Neherrin")) {
     currentFishList = fishData["Neherrin"];
+} else if (pageTitle.includes("Everglades")) {
+    currentFishList = fishData["Everglades"]; 
 } else if (pageTitle.includes("Gent")) {
     currentFishList = fishData["Gent"];
 } else {

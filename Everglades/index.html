@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platini2000 - Everglades Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Let op de ../ omdat we in een submap zitten -->
+    <link rel="stylesheet" href="../style.css?v=5">
+</head>
+<body>
+
+    <header>
+        <h1>FISHING PLANET</h1>
+        <h2>Everglades (Florida) Guide</h2>
+    </header>
+
+    <!-- 1. DE MAP BALK (BOVEN) -->
+    <nav id="location-nav" class="scroll-nav top-nav">
+        <a href="../index.html">Lone Star Lake</a>        
+        <a href="../Emerald Lake/index.html">Emerald Lake</a>  
+        <a href="../Mudwater River/index.html">Mudwater River</a>
+        <a href="../Rocky Lake/index.html">Rocky Lake</a>
+        <a href="../Neherrin River/index.html">Neherrin River</a>
+        <a href="../Falcon Lake/index.html">Falcon Lake</a>
+        <a href="index.html" class="active">Everglades</a>
+        <a href="../Gent Terneuzen/index.html">Gent Terneuzen</a>
+    </nav>
+
+    <!-- 2. DE VIS BALK (ONDER) - Wordt gevuld door Javascript -->
+    <nav id="fish-nav" class="scroll-nav bottom-nav">
+        <!-- Javascript vult dit automatisch -->
+    </nav>
+
+    <div class="container">
+
+        <!-- --- VIS INFO SCHERMEN --- -->
+        <div id="fish-details">
+            
+            <!-- 1. PEACOCK BASS -->
+            <div id="peacock" class="fish-card">
+                <div class="top-section">
+                    <img src="peacock.jpg" alt="Butterfly Peacock Bass" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Butterfly Peacock Bass</h3>
+                        <p class="fish-bio">
+                            Een prachtige, kleurrijke rover die agressief jaagt in ondiep water rond leliebladen. Een van de populairste vissen in Florida.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Ga naar "Infinity Tunnels" of "Floating Thicket". Vis strak langs de rietkragen en lelievelden.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Casting/Spin 2.10m+</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Reel 2500-3000</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid 0.23mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas (Top):</strong> Walkers, Poppers, Spoons (Goud).<br>
+                            <strong>Levend Aas:</strong> Shiners, Small Minnows.<br><br>
+                            <strong>Tip:</strong> Topwater lures werken geweldig op zonnige dagen.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Zeer Goed)<br>
+                            <strong>Types:</strong> Common, Trophy, Unique<br>
+                            <strong>Lengte:</strong> 30cm - 60cm<br>
+                            <strong>Gewicht:</strong> 1.0kg - 4.5kg<br>
+                            <strong>Haakmaat:</strong> #2/0 tot #4/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Infinity Tunnels, werp naar de splitsingen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Infinity Tunnels</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-150.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-280.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Techniek:</span> <span class="gear-val">Walking / Stop&Go</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-box">
+                    <strong>🛠️ Techniek:</strong> Oppervlakte vissen (Walk the Dog) lokt de zwaarste exemplaren.
+                </div>
+            </div>
+
+            <!-- 2. LARGEMOUTH BASS -->
+            <div id="largemouth" class="fish-card">
+                <div class="top-section">
+                    <img src="largemouth.jpg" alt="Largemouth Bass" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Largemouth Bass</h3>
+                        <p class="fish-bio">
+                            De klassieke Amerikaanse sportvis. Ze schuilen in de schaduw van bomen en onder de lelies.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Overal te vinden, maar vooral bij "Lily Pad Channel". Gooi in de open gaten tussen het groen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Casting Rod</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Casting Reel</span></div>
+                                <div class="gear-row"><span class="gear-label">Setup:</span> <span class="gear-val">Texas Rig of Jig</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Kunstaas:</strong> Bass Jigs (9g-14g) + Craw, Spoons.<br>
+                            <strong>Levend Aas:</strong> Shiners, Minnows.<br><br>
+                            <strong>Kleur:</strong> Pumpkin en Watermelon kleuren werken goed.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Stabiel)<br>
+                            <strong>Types:</strong> Common, Trophy, Unique<br>
+                            <strong>Lengte:</strong> 30cm - 70cm<br>
+                            <strong>Gewicht:</strong> 1.0kg - 6.0kg<br>
+                            <strong>Haakmaat:</strong> #3/0 tot #6/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Lily Pad Channel, zoek de structuur.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Lily Pad Channel</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-20.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-15.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Actie:</span> <span class="gear-val">Twitch / Lift&Drop</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. COMMON SNOOK -->
+            <div id="snook" class="fish-card">
+                <div class="top-section">
+                    <img src="snook.jpg" alt="Common Snook" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Common Snook</h3>
+                        <p class="fish-bio">
+                            Een sterke zout/brakwater rover. Herkenbaar aan de zwarte streep op de zij. Ze vechten hard en springen vaak.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Ga naar rechts: "Salty Delta". Hier komt het zoute water binnen. Vis bij de monding.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Spin/Cast 10kg+</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Fluoro of Braid</span></div>
+                                <div class="gear-row"><span class="gear-label">Leader:</span> <span class="gear-val">Titanium (Aanbevolen)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Levend Aas:</strong> Shiners, Large Minnows, Shrimp.<br>
+                            <strong>Kunstaas:</strong> Crankbaits (Midden diep), Medium Spoons.<br><br>
+                            <strong>Tip:</strong> 's Nachts zeer actief op Shiners.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Hoog)<br>
+                            <strong>Types:</strong> Common, Trophy, Unique<br>
+                            <strong>Lengte:</strong> 50cm - 110cm<br>
+                            <strong>Gewicht:</strong> 2.0kg - 14.0kg<br>
+                            <strong>Haakmaat:</strong> #4/0 tot #7/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Salty Delta, in de stroming.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Salty Delta</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">120.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">150.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Midden-water</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. TARPON -->
+            <div id="tarpon" class="fish-card">
+                <div class="top-section">
+                    <img src="tarpon.jpg" alt="Tarpon" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Tarpon</h3>
+                        <p class="fish-bio">
+                            De "Silver King". Een prehistorische reus die enorme sprongen maakt. Zorg voor zwaar materiaal!
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Alleen bij "Salty Delta". Vis in het open water waar het dieper is.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Heavy Spin/Match</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">4000/5000 series</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">15kg+ trekkracht</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Levend Aas:</strong> Large Minnows, Shiners, Crab.<br>
+                            <strong>Kunstaas:</strong> Grote Shads, Major Poppers.<br><br>
+                            <strong>Techniek:</strong> Dobber op 1.0m - 1.5m diepte.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐⭐ (Jackpot)<br>
+                            <strong>Types:</strong> Common (Trophy/Unique zeldzaam hier)<br>
+                            <strong>Lengte:</strong> 80cm - 150cm<br>
+                            <strong>Gewicht:</strong> 10kg - 30kg+<br>
+                            <strong>Haakmaat:</strong> #6/0 tot #8/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Werp ver het open water op bij de delta.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Salty Delta</span></div>
+                                <div class="gear-row"><span class="gear-label">Richting:</span> <span class="gear-val">Zuid-Oost</span></div>
+                                <div class="gear-row"><span class="gear-label">Afstand:</span> <span class="gear-val">40m+</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. FLORIDA GAR -->
+            <div id="gar" class="fish-card">
+                <div class="top-section">
+                    <img src="gar.jpg" alt="Florida Gar" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Florida Gar</h3>
+                        <p class="fish-bio">
+                            Een oude jager met een bek vol tanden. Ze hangen vaak net onder het oppervlak stil te wachten.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Overal in ondiep water, speciaal "Infinity Tunnels" en "Lily Pad Channel".
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Match / Float</span></div>
+                                <div class="gear-row"><span class="gear-label">Dobber:</span> <span class="gear-val">Peer (Zwaar)</span></div>
+                                <div class="gear-row"><span class="gear-label">Leader:</span> <span class="gear-val">Titanium (Verplicht!)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Large Minnows, Shiners.<br>
+                            <strong>Alternatief:</strong> Medium Cutbait.<br>
+                            <strong>Kunstaas:</strong> Walkers (Oppervlakte).
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Goed)<br>
+                            <strong>Types:</strong> Common, Trophy, Unique<br>
+                            <strong>Lengte:</strong> 50cm - 90cm<br>
+                            <strong>Gewicht:</strong> 1.5kg - 6.0kg<br>
+                            <strong>Haakmaat:</strong> #3/0 tot #6/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Vis ondiep (50-80cm) dichtbij lelies.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Infinity Tunnels</span></div>
+                                <div class="gear-row"><span class="gear-label">X-Coord:</span> <span class="gear-val">-140.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Y-Coord:</span> <span class="gear-val">-260.00</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Topwater / 60cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. RED DRUM -->
+            <div id="reddrum" class="fish-card">
+                <div class="top-section">
+                    <img src="reddrum.jpg" alt="Red Drum" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Red Drum</h3>
+                        <p class="fish-bio">
+                            Een krachtige bodemvis uit de zoutwaterdelta. Ze vechten lang en diep.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Exclusief in "Salty Delta". Vis statisch op de bodem.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Bottom / Feeder</span></div>
+                                <div class="gear-row"><span class="gear-label">Lood:</span> <span class="gear-val">50g - 100g</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Braid / Mono 0.30mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Shrimp (Garnalen), Crab.<br>
+                            <strong>Alternatief:</strong> Cutbait, Medium Minnows.<br><br>
+                            <strong>Kunstaas:</strong> Softbaits langzaam over bodem.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐⭐ (Hoog)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 40cm - 90cm<br>
+                            <strong>Gewicht:</strong> 2.0kg - 10.0kg<br>
+                            <strong>Haakmaat:</strong> #2/0 tot #5/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Gooi naar de diepere geulen in de delta.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Salty Delta</span></div>
+                                <div class="gear-row"><span class="gear-label">Target:</span> <span class="gear-val">Diepe gaten</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. GAFFTOPSAIL CATFISH -->
+            <div id="gafftopsail" class="fish-card">
+                <div class="top-section">
+                    <img src="gafftopsail.jpg" alt="Gafftopsail Catfish" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Gafftopsail Catfish</h3>
+                        <p class="fish-bio">
+                            Een zoutwater meerval met een hoge rugvin (zeil). Ze zijn vraatzuchtig en zwemmen in scholen.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            In de "Salty Delta". Kan zowel op de bodem als met dobber (diep) gevangen worden.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Bottom / Float</span></div>
+                                <div class="gear-row"><span class="gear-label">Molen:</span> <span class="gear-val">Krachtige slip</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Heavy Mono</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Shrimp, Gulf Shrimp.<br>
+                            <strong>Alternatief:</strong> Cutbait, Small Minnows.<br><br>
+                            <strong>Tip:</strong> Vis 's nachts voor de unieke exemplaren.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Prima)<br>
+                            <strong>Types:</strong> Common, Trophy, Unique<br>
+                            <strong>Lengte:</strong> 30cm - 65cm<br>
+                            <strong>Gewicht:</strong> 0.8kg - 4.5kg<br>
+                            <strong>Haakmaat:</strong> #1/0 tot #4/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Dezelfde plekken als Red Drum, maar ook ondieper.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Salty Delta</span></div>
+                                <div class="gear-row"><span class="gear-label">Tijd:</span> <span class="gear-val">Nacht (Piek)</span></div>
+                                <div class="gear-row"><span class="gear-label">Bodem:</span> <span class="gear-val">Zand/Modder</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. OSCAR -->
+            <div id="oscar" class="fish-card">
+                <div class="top-section">
+                    <img src="oscar.jpg" alt="Oscar" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Oscar</h3>
+                        <p class="fish-bio">
+                            Een exotische cichlide, oorspronkelijk aquariumvis, nu wild in Florida. Fel oranje/zwart en zeer agressief.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Tussen dichte leliebladen in "Infinity Tunnels". Ze zitten vaak heel ondiep.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Lichte Float/Spin</span></div>
+                                <div class="gear-row"><span class="gear-label">Dobber:</span> <span class="gear-val">Slank/Licht</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">0.18mm - 0.20mm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Red Worms, Maggots, Marshmallows.<br>
+                            <strong>Alternatief:</strong> Small Minnows, Insecten.<br>
+                            <strong>Kunstaas:</strong> Kleine Nano Spoons, Tube Jigs.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Leuk)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 20cm - 35cm<br>
+                            <strong>Gewicht:</strong> 0.3kg - 1.2kg<br>
+                            <strong>Haakmaat:</strong> #6 tot #1<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Gooi precies in kleine openingen tussen lelies.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Infinity Tunnels</span></div>
+                                <div class="gear-row"><span class="gear-label">Target:</span> <span class="gear-val">Plantengaten</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">30cm - 50cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. BOWFIN -->
+            <div id="bowfin" class="fish-card">
+                <div class="top-section">
+                    <img src="bowfin.jpg" alt="Bowfin" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Bowfin</h3>
+                        <p class="fish-bio">
+                            Een oervis die lucht kan happen. Ze leven in troebel, stilstaand water en vechten wild.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            In de modderige stukken van "Lily Pad Channel" of onderaan bij de start. Bodemvissen werkt het best.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Bottom Rod</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Sterke Mono</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Cutbait (Stukjes vis), Frogs.<br>
+                            <strong>Alternatief:</strong> Large Minnows.<br>
+                            <strong>Kunstaas:</strong> Mouse Lures (Bovenop de planten).
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Gemiddeld)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 45cm - 80cm<br>
+                            <strong>Gewicht:</strong> 2.0kg - 8.0kg<br>
+                            <strong>Haakmaat:</strong> #2/0 tot #5/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Zoek naar plekken met veel plantengroei.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Lily Pad Channel</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                                <div class="gear-row"><span class="gear-label">Tijd:</span> <span class="gear-val">Hele dag</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. BROWN BULLHEAD -->
+            <div id="bullhead" class="fish-card">
+                <div class="top-section">
+                    <img src="bullhead.jpg" alt="Brown Bullhead" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Brown Bullhead Catfish</h3>
+                        <p class="fish-bio">
+                            Kleine meerval die vooral 's avonds en 's nachts actief is. Eet alles wat op de bodem ligt.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Ondiepe kanten bij riet. "Infinity Tunnels" ingang is goed.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Feeder / Light Bottom</span></div>
+                                <div class="gear-row"><span class="gear-label">Haak:</span> <span class="gear-val">Niet te groot</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Pet Food (Brokken), Cutbait.<br>
+                            <strong>Alternatief:</strong> Kaas, Wormen, Bloedwormen.<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Laag)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 20cm - 40cm<br>
+                            <strong>Gewicht:</strong> 0.3kg - 1.0kg<br>
+                            <strong>Haakmaat:</strong> #4 tot #1/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Dicht bij de kant vissen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Overal (Zoetwater)</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Bodem</span></div>
+                                <div class="gear-row"><span class="gear-label">Tijd:</span> <span class="gear-val">Nacht/Schemer</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. CHANNEL CATFISH -->
+            <div id="channelcat" class="fish-card">
+                <div class="top-section">
+                    <img src="channelcat.jpg" alt="Channel Catfish" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Channel Catfish</h3>
+                        <p class="fish-bio">
+                            De grote broer van de Bullhead. Zoekt diepere gaten in het zoete gedeelte van de Everglades.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zoek de diepste plekken op de kaart (donkerblauw) weg van de zoute delta.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Heavy Feeder</span></div>
+                                <div class="gear-row"><span class="gear-label">Lood:</span> <span class="gear-val">75g+</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Pet Food, Large Cutbait.<br>
+                            <strong>Alternatief:</strong> Leeches, Kikkers.<br>
+                            <strong>Geur:</strong> Sterk ruikend aas werkt het best.
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐⭐ (Redelijk)<br>
+                            <strong>Types:</strong> Common<br>
+                            <strong>Lengte:</strong> 40cm - 90cm<br>
+                            <strong>Gewicht:</strong> 2.0kg - 10.0kg<br>
+                            <strong>Haakmaat:</strong> #2/0 tot #5/0<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Midden in "Lily Pad Channel" waar het diep is.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Lily Pad Channel</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Max Diepte</span></div>
+                                <div class="gear-row"><span class="gear-label">Tijd:</span> <span class="gear-val">Nacht is top</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. WARMOUTH -->
+            <div id="warmouth" class="fish-card">
+                <div class="top-section">
+                    <img src="warmouth.jpg" alt="Warmouth" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Warmouth</h3>
+                        <p class="fish-bio">
+                            Lijkt op een kruising tussen een baars en een zonnebaars. Heeft een grote bek en verstopt zich in dichte planten.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Dichtbegroeide oevers. Gooi letterlijk in het wier.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Telescoop / Light</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">Dunnere Mono</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Wax Worms, Red Worms.<br>
+                            <strong>Alternatief:</strong> Krekels (Crickets).<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Oké)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 15cm - 25cm<br>
+                            <strong>Gewicht:</strong> 0.2kg - 0.5kg<br>
+                            <strong>Haakmaat:</strong> #8 tot #4<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Infinity Tunnels, tegen de kant aan.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Infinity Tunnels</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">40cm - 60cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. REDEAR SUNFISH -->
+            <div id="redear" class="fish-card">
+                <div class="top-section">
+                    <img src="redear.jpg" alt="Redear Sunfish" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Redear Sunfish</h3>
+                        <p class="fish-bio">
+                            De "Shellcracker". Eet graag slakken en harde beestjes van de bodem. Groter dan de gewone Bluegill.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zoek hardere bodemstukken tussen de planten. Iets dieper dan de Bluegill.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Float Rod</span></div>
+                                <div class="gear-row"><span class="gear-label">Setup:</span> <span class="gear-val">Dobber</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Night Crawlers, Wormen.<br>
+                            <strong>Alternatief:</strong> Maggots.<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐⭐ (Massa)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 20cm - 35cm<br>
+                            <strong>Gewicht:</strong> 0.3kg - 1.0kg<br>
+                            <strong>Haakmaat:</strong> #6 tot #2<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Lily Pad Channel, iets verder van de kant.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Lily Pad Channel</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">80cm - 120cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. BLUEGILL -->
+            <div id="bluegill" class="fish-card">
+                <div class="top-section">
+                    <img src="bluegill.jpg" alt="Bluegill" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Bluegill</h3>
+                        <p class="fish-bio">
+                            De meest voorkomende vis. Agressief, klein en talrijk. Ideaal als je net begint of de tijd wilt doden.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Letterlijk overal waar water is. 
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Ultra Light</span></div>
+                                <div class="gear-row"><span class="gear-label">Haak:</span> <span class="gear-val">Klein (#10-#6)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Brood (Bread), Deeg.<br>
+                            <strong>Alternatief:</strong> Insecten, Wormen.<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Laag)<br>
+                            <strong>Types:</strong> Common, Trophy<br>
+                            <strong>Lengte:</strong> 15cm - 25cm<br>
+                            <strong>Gewicht:</strong> 0.2kg - 0.5kg<br>
+                            <strong>Haakmaat:</strong> #10 tot #6<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Gooi 5 meter voor je voeten.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Overal</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">Ondiep</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. GOLDEN SHINER -->
+            <div id="shiner" class="fish-card">
+                <div class="top-section">
+                    <img src="shiner.jpg" alt="Golden Shiner" class="fish-img-uniform">
+                    <div class="header-info">
+                        <h3 class="fish-title">Golden Shiner</h3>
+                        <p class="fish-bio">
+                            Goudkleurige aasvis. Wordt gevangen om later als levend aas te dienen voor Bass en Snook.
+                        </p>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="detail-block">
+                        <h4>📍 Locatie & Setup</h4>
+                        <div class="detail-text">
+                            Zeer ondiep tussen het riet. Zoek naar kleine rimpelingen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Hengel:</span> <span class="gear-val">Ultra Light Float</span></div>
+                                <div class="gear-row"><span class="gear-label">Lijn:</span> <span class="gear-val">0.12mm Mono</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4><i class="fa-solid fa-worm" style="color: #e67e22; margin-right: 5px;"></i> Aas & Lures</h4>
+                        <div class="detail-text">
+                            <strong>Top Aas:</strong> Doughballs (Deeg), Brood.<br>
+                            <strong>Alternatief:</strong> Semolina.<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>⚖️ Vis Info</h4>
+                        <div class="detail-text">
+                            <strong>Geld/XP:</strong> ⭐ (Nihil)<br>
+                            <strong>Types:</strong> Common<br>
+                            <strong>Lengte:</strong> 8cm - 15cm<br>
+                            <strong>Gewicht:</strong> < 0.2kg<br>
+                            <strong>Haakmaat:</strong> #12 tot #10 (Micro)<br>
+                        </div>
+                    </div>
+                    <div class="detail-block">
+                        <h4>🎯 Coördinaten & Spot</h4>
+                        <div class="detail-text">
+                            Tegen de rietkragen.
+                            <div class="gear-list">
+                                <div class="gear-row"><span class="gear-label">Plek:</span> <span class="gear-val">Infinity Tunnels</span></div>
+                                <div class="gear-row"><span class="gear-label">Diepte:</span> <span class="gear-val">30cm</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Einde Fish Details -->
+    </div>
+
+    <footer>
+        &copy; 2026 Platini2000 Fishing Guides
+    </footer>
+
+    <!-- Let op ../ ook hier -->
+    <script src="../script.js"></script>
+</body>
+</html>
