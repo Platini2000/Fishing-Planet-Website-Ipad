@@ -133,7 +133,7 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
 .fish-img-uniform {
     width: 100%;
     max-width: 600px;
-    height: 140px; 
+    height: 150px; 
     object-fit: cover; 
     border-radius: 10px;
     border: 2px solid #4ca1af; 
