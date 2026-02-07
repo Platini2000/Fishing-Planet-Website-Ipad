@@ -176,7 +176,11 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
 }
 
 .detail-block {
-    background-color: #333;
+    background: linear-gradient(
+        to right,
+        rgba(44, 62, 80, 0.1),
+        rgba(76, 161, 175, 0.1)
+    );
     padding: 10px;
     border-radius: 0; 
     border-left: 4px solid #4ca1af;
@@ -187,6 +191,7 @@ header h2 { margin: 5px 0 0 0; font-weight: 300; color: #a8d8e6; }
     position: relative;
     z-index: 1;
 }
+
 
 /* --- ZWARTE LIJN OVER DE BLAUWE LIJNEN --- */
 @media(min-width: 700px) {
